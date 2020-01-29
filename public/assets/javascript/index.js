@@ -7,7 +7,7 @@ $(document).on('click', '#submit', function () {
 			var nameTitle = data[i].title;
 			var srcInfo = data[i].link;
 			var dataId = data[i]._id;
-			$("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+			$("#articles").append("<p data-id='" + data[i]._id + "'>" + "<strong>Title: </strong>" + data[i].title + "<br />" + "<strong>Link:</strong> nytimes.com" + data[i].link + "</p>");
 
 			//Notes Button
 			var noteInput = $('<button>');
@@ -72,7 +72,7 @@ $(document).on('click', '.getnote', function () {
 
 	// ajax call for note update
 	$.getJSON("/api/articles/" + dataIdEvent, (data) => {
-
+		
 		//Notes display
 		console.log(data.note.body);
 		var note = data.note.body;
@@ -91,7 +91,7 @@ $(document).on('click', '.hide', function () {
 $(document).on("click", ".delete", function () {
 	var dataIdEvent = $('.take-note').attr('data-id');
 	console.log(dataIdEvent);
-	
+
 	// ajax call for note update
 	$.ajax({
 		method: "PUT",
