@@ -1,9 +1,6 @@
 # Mongo-Scraper
 
-In this assignment, you'll create a web app that scrapes the latest New York Times articles and lets users view and leave comments. You'll find the deployed assignment here: #
-
-
-
+In this assignment, you'll create a web app that scrapes the latest New York Times articles and lets users view and leave comments. You'll find the deployed assignment here: https://glacial-stream-13733.herokuapp.com/
 
 
 ## Deployment
